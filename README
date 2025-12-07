@@ -1,0 +1,36 @@
+# Delivery App – Application de Livraison de Repas (MERN)
+
+Application complète de livraison de repas avec trois types d’utilisateurs :
+
+- **Client**  
+- **Livreur**  
+- **Propriétaire de restaurant**
+
+## Sprint 1 – Authentification (Terminé)
+
+### Fonctionnalités implémentées
+- Inscription différenciée selon le rôle  
+- Connexion / Déconnexion  
+- Récupération du profil courant (`/me`)  
+- Protection des routes par rôle  
+- Session sécurisée via cookie HttpOnly  
+- Hachage des mots de passe (bcrypt)
+
+### Endpoints principaux
+POST /api/auth/register
+POST /api/auth/login
+GET  /api/auth/me
+POST /api/auth/logout
+
+
+### Architecture respectée (conforme aux diagrammes UML)
+Controller → Service → Model → MongoDB  
+Séparation claire des responsabilités
+
+## Prochaines étapes
+- Gestion du menu restaurant  
+- Système de commandes  
+- Suivi en temps réel pour le livreur  
+- Paiement et notifications
+
+Projet développé avec Node.js + Express + MongoDB (backend) – ES Modules 2025.
